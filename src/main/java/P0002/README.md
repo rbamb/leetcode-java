@@ -2,4 +2,4 @@
 
 https://leetcode-cn.com/problems/add-two-numbers
 
-1. 修改归并排序
+1. 将特殊情况一般化 [Naive.java](./Naive.java)
