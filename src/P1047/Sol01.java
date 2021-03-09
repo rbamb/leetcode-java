@@ -8,13 +8,14 @@ public class Sol01 implements Main {
     Stack<Character> stack = new Stack<>();
     stack.push(S.charAt(0));
     for (int i = 1; i < S.length(); i++) {
-      if (stack.peek() == S.charAt(i)) stack.pop();
+      if (stack.isEmpty()) stack.push(S.charAt(i));
+      else if (stack.peek() == S.charAt(i)) stack.pop();
       else stack.push(S.charAt(i));
     }
-    for (Character chr : stack) {
-      System.out.print(chr);
+    StringBuilder ret = new StringBuilder();
+    while (!stack.isEmpty()) {
+      ret.append(stack.pop());
     }
-    System.out.println();
-    return null;
+    return ret.reverse().toString();
   }
 }
