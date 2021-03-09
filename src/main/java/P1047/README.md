@@ -2,8 +2,8 @@
 
 https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string
 
-总体思路就是使用栈结构，时间复杂度为$O(N)$，只不过在实际编码时不一定要使用Stack，Java的String类本身就类似于一个栈结构
-
-更进一步，不一定必须要使用String相关类，直接使用Char数组即可
+1. 暴力求解 [Naive.java](./Naive.java)
+2. 使用栈结构 [Sol01.java](./Sol01.java)
+3. 仍然使用栈结构，但并不一定要直接使用栈 [Sol02.java](./Sol02.java) [Sol03.java](./Sol03.java)
 
 
